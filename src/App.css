@@ -1,0 +1,94 @@
+/* Styles for the Offline Notes App UI (App.jsx) */
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 16px;
+}
+
+.app h1 {
+  margin: 0 0 8px;
+  font-size: 2.5rem;
+}
+
+/* Online / offline badge */
+.status {
+  display: inline-block;
+  margin: 0 0 24px;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status.online {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.offline {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* Text box + Add button */
+.note-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.note-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.note-form input:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+
+.note-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #1e293b;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.note-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* List of notes */
+.note-list {
+  padding-left: 20px;
+}
+
+.note-list li {
+  padding: 4px 0;
+}
+
+.empty {
+  color: #64748b;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+/* Hidden visually but still read by screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
